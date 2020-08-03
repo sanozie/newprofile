@@ -3,12 +3,12 @@
   "file": "bundle.css",
   "sources": [
     "../App.svelte",
-    "../Button.svelte"
+    "../Landing.svelte"
   ],
   "sourcesContent": [
-    "<script>\n\timport Button from \"./Button.svelte\";\n</script>\n\n<style>\n  main {\n    font-family: sans-serif;\n    text-align: center;\n  }\n</style>\n\n<main>\n\t<h1>Hello CodeSandbox</h1>\n\t<h2>Start editing to see some magic happen!</h2>\n\t<Button />\n</main>",
-    "<script>\n\tlet count = 0;\n\n\tfunction handleClick() {\n\t  count += 1;\n\t}\n</script>\n\n<style>\n\tbutton {\n\t  background: #ff3e00;\n\t  color: white;\n\t  border: none;\n\t  padding: 8px 12px;\n\t  border-radius: 2px;\n\t}\n</style>\n\n<button on:click={handleClick}>\n  Clicked {count} {count === 1 ? 'time' : 'times'}\n</button>"
+    "<script>\n\timport Landing from './Sections/Landing.svelte'\n</script>\n\n<style>\n    main {\n        display: flex;\n        height: 100%;\n    }\n</style>\n\n<main>\n\t<Landing />\n</main>",
+    "\n<script>\n    let xfocalpoint = window.innerWidth / 2\n    let yfocalpoint = window.innerHeignt / 2\n    let herocolor = 'linear-gradient(#be5108, #be5108,#be5108,  #ca3954, #ae478a, #755ea8, #2e6ca4, #2e6ca4, #2e6ca4)',\n            rotate\n    window.addEventListener('mousemove', (e) => {\n        let x = e.pageX, y = e.pageY\n        let xmovemeter = -x + xfocalpoint, ymovemeter = -y + yfocalpoint\n        herocolor = `linear-gradient(${xmovemeter / 20}deg, #be5108, #be5108,#be5108,  #ca3954, #ae478a, #755ea8, #2e6ca4, #2e6ca4, #2e6ca4)`\n        console.log(herocolor)\n        rotate = `rotateX(${-(ymovemeter/yfocalpoint)/24}turn) rotateY(${-(xmovemeter/xfocalpoint)/16}turn) rotateZ(${-(xmovemeter/xfocalpoint)/150}turn) skewX(${(xmovemeter/xfocalpoint)}deg)`\n    })\n</script>\n\n<style>\n    section {\n        height: 100vh;\n    }\n\n    h1 {\n        font-weight: bolder;\n        font-size: 10vw;\n        text-align: left;\n        -webkit-background-clip: text;\n        -webkit-text-fill-color: transparent;\n    }\n</style>\n\n<section class=\"container-fluid center\">\n    <div class=\"row justify-content-center\">\n        <h1 style=\"transform: {rotate}; background: {herocolor}\">Aye I'm Sam.</h1>\n    </div>\n</section>\n\n"
   ],
   "names": [],
-  "mappings": "AAKE,IAAI,eAAC,CAAC,AACJ,WAAW,CAAE,UAAU,CACvB,UAAU,CAAE,MAAM,AACpB,CAAC;ACCF,MAAM,eAAC,CAAC,AACN,UAAU,CAAE,OAAO,CACnB,KAAK,CAAE,KAAK,CACZ,MAAM,CAAE,IAAI,CACZ,OAAO,CAAE,GAAG,CAAC,IAAI,CACjB,aAAa,CAAE,GAAG,AACpB,CAAC"
+  "mappings": "AAKI,IAAI,eAAC,CAAC,AACF,OAAO,CAAE,IAAI,CACb,MAAM,CAAE,IAAI,AAChB,CAAC;ACQD,OAAO,cAAC,CAAC,AACL,MAAM,CAAE,KAAK,AACjB,CAAC,AAED,EAAE,cAAC,CAAC,AACA,WAAW,CAAE,MAAM,CACnB,SAAS,CAAE,IAAI,CACf,UAAU,CAAE,IAAI,CAChB,uBAAuB,CAAE,IAAI,CAC7B,uBAAuB,CAAE,WAAW,AACxC,CAAC"
 }

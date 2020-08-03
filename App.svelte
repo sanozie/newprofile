@@ -1,16 +1,14 @@
 <script>
-	import Button from "./Button.svelte";
+	import Landing from './Sections/Landing.svelte'
 </script>
 
 <style>
-  main {
-    font-family: sans-serif;
-    text-align: center;
-  }
+    main {
+        display: flex;
+        height: 100%;
+    }
 </style>
 
 <main>
-	<h1>Hello CodeSandbox</h1>
-	<h2>Start editing to see some magic happen!</h2>
-	<Button />
+	<Landing />
 </main>
