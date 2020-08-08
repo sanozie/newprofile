@@ -1,14 +1,16 @@
 <script lang="ts">
 	import Landing from './pages/Landing.svelte'
+	import Profile from './pages/Profile.svelte'
 </script>
 
 <style>
 	main {
 		display: flex;
-		height: 100%;
+		flex-direction: column;
 	}
 </style>
 
 <main>
 	<Landing />
+	<Profile />
 </main>

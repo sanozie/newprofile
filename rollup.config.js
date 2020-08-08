@@ -7,6 +7,14 @@ import sveltePreprocess from 'svelte-preprocess';
 import typescript from '@rollup/plugin-typescript';
 
 const production = !process.env.ROLLUP_WATCH;
+const preprocess = sveltePreprocess({
+	scss: {
+		includePaths: ['src'],
+	},
+	postcss: {
+		plugins: [require('autoprefixer')],
+	}
+})
 
 function serve() {
 	let server;
@@ -46,7 +54,8 @@ export default {
 			css: css => {
 				css.write('public/build/bundle.css');
 			},
-			preprocess: sveltePreprocess(),
+			preprocess
+
 		}),
 
 		// If you have external dependencies installed from
