@@ -10,7 +10,7 @@
             link: "https://pulsem.me",
             time: "July 2020 - Present",
             description: "Creating A/B Framework with Vue.js & TypeScript",
-            expImg: "varsityexp.png"
+            banner: "imgs/banners/varsityexp.png"
         },
         Wyzant: {
             company: "Wyzant",
@@ -19,7 +19,7 @@
             link: "https://www.wyzant.com/match/tutor/88184101",
             time: "May 2020 - Present",
             description: "Assisting students in various web development bootcamps and classes.",
-            expImg: "varsityexp.png"
+            banner: "imgs/banners/varsityexp.png"
         },
         VT: {
             company: "Varsity Tutors",
@@ -28,16 +28,16 @@
             link: "https://www.varsitytutors.com/tutors/878747878",
             time: "Feb 2020 - Present",
             description: "Assisting students in various web development bootcamps and classes.",
-            expImg: "varsityexp.png"
+            banner: "imgs/banners/varsityexp.png"
         },
         Keyring: {
             company: "Keyring",
             title: "Software Engineering Intern",
             logo: "imgs/logos/keyringlogo.png",
             link: "https://joinkeyring.com",
-            time: "Apr 2020 - Present",
+            time: "Apr 2020 - Jun 2020",
             description: "Bundling platform for streaming services.",
-            expImg: "keyringexp.svg"
+            banner: "imgs/banners/keyringexp.svg"
         },
         Cootbie: {
             company: "Cootbie",
@@ -46,7 +46,7 @@
             link: "https://cootbie.com",
             time: "Jul 2019 - Jan 2020",
             description: "Giving job-seekers a voice in the journey of recruitment.",
-            expImg: "cootbieback.png"
+            banner: "imgs/banners/cootbieback.png"
         },
         Titan: {
             company: "Titan Robotics 2022",
@@ -55,7 +55,7 @@
             link: "https://titanrobotics2022.com",
             time: "Jun 2019 - Jul 2019",
             description: "Showcasing robotics team for business partnerships.",
-            expImg: "roboticsexp.png"
+            banner: "imgs/banners/roboticsexp.png"
         },
         PWP: {
             company: "Packed With Purpose",
@@ -64,22 +64,25 @@
             link: "https://packedwithpurpose.gifts",
             time: "Jun 2018 - Jul 2018",
             description: "Corporate gifting combined with sustainable practices.",
-            expImg: "pwpexp.png"
+            banner: "imgs/banners/pwpexp.png"
         }
     }
-    console.log(Object.entries(experienceData))
+    let firstHover = false
+    let active = ''
+
+    function sawHover(e) {
+        firstHover = true
+        active = e.detail.id
+    }
 </script>
 
-<style>
-</style>
-
-<article class="container-fluid">
+<article class="container mt-5">
     <div class="row">
         <div class="col-md-6">
             <div class="row">
                 <div class="col-12">
                     {#each Object.entries(experienceData) as item }
-                        <Experience id={item[0]} data={item[1]} />
+                        <Experience id={item[0]} data={item[1]} firstHover={firstHover} active={active} on:hoveredEXP={sawHover}/>
                     {/each}
                 </div>
             </div>

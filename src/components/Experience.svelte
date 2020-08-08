@@ -1,9 +1,18 @@
 <script>
+    import { createEventDispatcher } from 'svelte';
     export let id
     export let data
+    export let firstHover
+    export let active
+
+    const dispatch = createEventDispatcher();
+
+    function hoveredEXP() {
+        dispatch('hoveredEXP', { id, banner: data.banner });
+    }
 </script>
 
-<div class="info-wrapper exp-info-wrapper position-relative" data-external-link={data.link} data-company={id}>
+<div class="info-wrapper exp-info-wrapper position-relative" class:info-wrapper-hover={(id === 'PulseM' && !firstHover) || active === id} on:mouseenter={hoveredEXP}>
     <span class = "externalButton center">
         <svg class="bi bi-box-arrow-up-right externalIcon" width="1em" height="1em" viewBox="0 0 16 16" fill="white" xmlns="http://www.w3.org/2000/svg">
             <path fill-rule="evenodd" d="M1.5 13A1.5 1.5 0 003 14.5h8a1.5 1.5 0 001.5-1.5V9a.5.5 0 00-1 0v4a.5.5 0 01-.5.5H3a.5.5 0 01-.5-.5V5a.5.5 0 01.5-.5h4a.5.5 0 000-1H3A1.5 1.5 0 001.5 5v8zm7-11a.5.5 0 01.5-.5h5a.5.5 0 01.5.5v5a.5.5 0 01-1 0V2.5H9a.5.5 0 01-.5-.5z" clip-rule="evenodd"/>
@@ -11,7 +20,7 @@
         </svg>
     </span>
     <div class="row info-item my-2 justify-content-start">
-        <div class="col-2 h-100 justify-content-center company-logo-col center-vert">
+        <div class="col-2 h-100 justify-content-center company-logo-col center-vert pl-3">
             <img src={data.logo} class="img-fluid company-logo" alt="Company Logo" />
         </div>
         <div class="col-8 h-100 center-vert expTextRow">
@@ -23,7 +32,12 @@
                 </div>
                 <div class="row">
                     <div class="col-12 info-text">
-                        <p>{data.title}</p>
+                        <p class="title">{data.title}</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12 info-text">
+                        <p class="time">{data.time}</p>
                     </div>
                 </div>
             </div>
@@ -68,6 +82,13 @@
         .into-text {
             white-space: nowrap;
         }
+        .title {
+            margin: 0;
+        }
+        .time {
+            color: rgba(0,0,0,0.3);
+            margin: 0;
+        }
         h2 {
             font-size: calc(1rem + 0.9vw);
             font-weight: bolder;
@@ -81,7 +102,8 @@
             max-height: 100%;
         }
     }
-    .info-wrapper:hover {
+
+    .info-wrapper-hover {
         transform: translate(-0px, -4px);
         box-shadow: -2px 6px 20px rgba(104, 104, 104, 0.1);
         opacity: 1;
