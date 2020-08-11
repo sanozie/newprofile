@@ -2,17 +2,16 @@
     import { createEventDispatcher } from 'svelte';
     export let id
     export let data
-    export let firstHover
     export let active
 
     const dispatch = createEventDispatcher();
 
     function hoveredEXP() {
-        dispatch('hoveredEXP', { id, banner: data.banner });
+        dispatch('hoveredEXP', { id, banner: data.banner, description: data.description });
     }
 </script>
 
-<div class="info-wrapper exp-info-wrapper position-relative" class:info-wrapper-hover={(id === 'PulseM' && !firstHover) || active === id} on:mouseenter={hoveredEXP}>
+<div class="info-wrapper exp-info-wrapper position-relative" class:info-wrapper-hover={active === id} on:mouseenter={hoveredEXP}>
     <span class = "externalButton center">
         <svg class="bi bi-box-arrow-up-right externalIcon" width="1em" height="1em" viewBox="0 0 16 16" fill="white" xmlns="http://www.w3.org/2000/svg">
             <path fill-rule="evenodd" d="M1.5 13A1.5 1.5 0 003 14.5h8a1.5 1.5 0 001.5-1.5V9a.5.5 0 00-1 0v4a.5.5 0 01-.5.5H3a.5.5 0 01-.5-.5V5a.5.5 0 01.5-.5h4a.5.5 0 000-1H3A1.5 1.5 0 001.5 5v8zm7-11a.5.5 0 01.5-.5h5a.5.5 0 01.5.5v5a.5.5 0 01-1 0V2.5H9a.5.5 0 01-.5-.5z" clip-rule="evenodd"/>
@@ -23,7 +22,7 @@
         <div class="col-2 h-100 justify-content-center company-logo-col center-vert pl-3">
             <img src={data.logo} class="img-fluid company-logo" alt="Company Logo" />
         </div>
-        <div class="col-8 h-100 center-vert expTextRow">
+        <div class="col-8 h-100 center-vert">
             <div class="envelope">
                 <div class="row">
                     <div class="col-12 info-text">

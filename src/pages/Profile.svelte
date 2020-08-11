@@ -15,6 +15,6 @@
         background-color: #ececec;
     }
     h1 {
-        font-family: inherit
+        font-weight: 700;
     }
 </style>

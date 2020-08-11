@@ -9,5 +9,6 @@
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="module" module-name="sanozie.github.io" />
+    <orderEntry type="module" module-name="diyhacks-app" />
   </component>
 </module>
