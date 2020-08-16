@@ -21,16 +21,14 @@
   <component name="ChangeListManager">
     <list default="true" id="7b1b9484-9ebb-4281-940e-225f445b4673" name="Default Changelist" comment="">
       <change afterPath="$PROJECT_DIR$/../diyhacks-app/src/pages/api/submissions.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/imgs/banners/pulsemexp.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/imgs/banners/pwpexp.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/imgs/banners/wyzantexp.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Project.svelte" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/ProjectEnv.svelte" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/Portfolio.svelte" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../sanozie.github.io/.idea/sanozie.github.io.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../diyhacks-app/.idea/diyhacks-app.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../diyhacks-app/.idea/diyhacks-app.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../diyhacks-app/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../diyhacks-app/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../diyhacks-app/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../diyhacks-app/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../diyhacks-app/.next/build-manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/../diyhacks-app/.next/build-manifest.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../diyhacks-app/.next/cache/autodll-webpack-plugin/package.json.hash" beforeDir="false" afterPath="$PROJECT_DIR$/../diyhacks-app/.next/cache/autodll-webpack-plugin/package.json.hash" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../diyhacks-app/.next/server/pages-manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/../diyhacks-app/.next/server/pages-manifest.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../diyhacks-app/.next/static/development/pages/_app.js" beforeDir="false" afterPath="$PROJECT_DIR$/../diyhacks-app/.next/static/development/pages/_app.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../diyhacks-app/.next/static/runtime/amp.js" beforeDir="false" afterPath="$PROJECT_DIR$/../diyhacks-app/.next/static/runtime/amp.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../diyhacks-app/.next/static/runtime/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/../diyhacks-app/.next/static/runtime/main.js" afterDir="false" />
@@ -41,15 +39,10 @@
       <change beforePath="$PROJECT_DIR$/../diyhacks-app/src/pages/Signup/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/../diyhacks-app/src/pages/Signup/index.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../diyhacks-app/src/pages/Submission/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/../diyhacks-app/src/pages/Submission/index.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../diyhacks-app/src/pages/api/submit.js" beforeDir="false" afterPath="$PROJECT_DIR$/../diyhacks-app/src/pages/api/submit.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../diyhacks-app/src/pages/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/../diyhacks-app/src/pages/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../diyhacks-app/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../diyhacks-app/yarn.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/newprofile.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/newprofile.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Experience.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Experience.svelte" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Experiences.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Experiences.svelte" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/Landing.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Landing.svelte" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.svelte" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/Profile.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Profile.svelte" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -57,8 +50,15 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Svelte Component" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../diyhacks-app" />
   </component>
   <component name="ProjectId" id="1fmcr9673oWGnDOEQ7kzlmN6Yr0" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -72,18 +72,19 @@
     <property name="TERMINAL_CUSTOM_COMMANDS_GOT_IT" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="dart.analysis.tool.window.visible" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/public/imgs/banners" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/components" />
     <property name="nodejs_package_manager_path" value="yarn" />
     <property name="ts.external.directory.path" value="$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/components" />
       <recent name="$PROJECT_DIR$/public/imgs/banners" />
       <recent name="$PROJECT_DIR$/public/imgs/logos" />
       <recent name="$PROJECT_DIR$/public/imgs/designs" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
     </key>
   </component>
   <component name="RunManager">
@@ -109,7 +110,15 @@
       <workItem from="1596826907820" duration="5612000" />
       <workItem from="1596891192554" duration="12973000" />
       <workItem from="1597022964930" duration="2427000" />
-      <workItem from="1597121449426" duration="5690000" />
+      <workItem from="1597121449426" duration="5779000" />
+      <workItem from="1597163995052" duration="289000" />
+      <workItem from="1597284804229" duration="2083000" />
+      <workItem from="1597287215835" duration="311000" />
+      <workItem from="1597288483005" duration="192000" />
+      <workItem from="1597367433559" duration="1724000" />
+      <workItem from="1597539949365" duration="258000" />
+      <workItem from="1597601170862" duration="212000" />
+      <workItem from="1597601419152" duration="1378000" />
     </task>
     <servers />
   </component>
@@ -133,6 +142,18 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="354" y="135" key="#Inspections/0.0.1440.900@0.0.1440.900" timestamp="1596891729031" />
+    <state x="184" y="112" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1597601308349">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="184" y="112" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1440.900@0.0.1440.900" timestamp="1597601308349" />
+    <state x="442" y="250" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1597286919922">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="442" y="250" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1440.900@0.0.1440.900" timestamp="1597286919922" />
+    <state x="408" y="193" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1597601389165">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="408" y="193" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1440.900@0.0.1440.900" timestamp="1597601389165" />
     <state width="1419" height="298" key="GridCell.Tab.0.bottom" timestamp="1596828277567">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
@@ -197,9 +218,13 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state width="1419" height="298" key="GridCell.Tab.3.right/0.0.1440.900@0.0.1440.900" timestamp="1596828277571" />
-    <state x="383" y="194" width="672" height="678" key="search.everywhere.popup" timestamp="1596901438032">
+    <state x="308" y="192" key="IDE.errors.dialog" timestamp="1597287170665">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="383" y="194" width="672" height="678" key="search.everywhere.popup/0.0.1440.900@0.0.1440.900" timestamp="1596901438032" />
+    <state x="308" y="192" key="IDE.errors.dialog/0.0.1440.900@0.0.1440.900" timestamp="1597287170665" />
+    <state x="383" y="194" width="672" height="678" key="search.everywhere.popup" timestamp="1597368452817">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="383" y="194" width="672" height="678" key="search.everywhere.popup/0.0.1440.900@0.0.1440.900" timestamp="1597368452817" />
   </component>
 </project>
