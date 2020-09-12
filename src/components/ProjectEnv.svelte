@@ -3,25 +3,25 @@
     import { fade, fly } from 'svelte/transition';
 
     let projectData = {
-        Titan: {
-            title: "Titan Robotics 2022",
-            logo: "public/imgs/titan2022.png",
-            link: "https://titanrobotics2022.com",
-            description: "Redesigning robotics team website for business partnerships.",
-            banner: "titanback.png",
-            mobile: true
-        },
         DIYHacks: {
             title: "DIYHacks",
-            logo: "public/imgs/diyhackslogo.png",
+            logo: "diyhackslogo.png",
             link: "https://diyhacks.tech",
             description: "Dynamic hackathon & project creation for students.",
             banner: "diyhacksback.png",
             mobile: true
         },
+        Titan: {
+            title: "Titan Robotics 2022",
+            logo: "titan2022.png",
+            link: "https://titanrobotics2022.com",
+            description: "Redesigning robotics team website for business partnerships.",
+            banner: "titanback.png",
+            mobile: true
+        },
         CA: {
             title: "Code Authority",
-            logo: "public/imgs/calogo.png",
+            logo: "calogo.png",
             link: "./CodeAuthority",
             description: "Designed and developed interview website within a week.",
             banner: "caback.png",
@@ -29,7 +29,7 @@
         },
         Bordar: {
             title: "Bordar",
-            logo: "public/imgs/bordarlogo.png",
+            logo: "bordarlogo.png",
             link: "https://bordar.site",
             description: "Data analytics for curriculum development.",
             banner: "bordarback.png",
@@ -37,17 +37,17 @@
         },
         SEVC: {
             title: "SEVC",
-            logo: "public/imgs/sevclogo.png",
+            logo: "sevclogo.png",
             link: "./SEVC",
             description: "Student-driven ventures impacting world sustainability.",
             banner: "sevcback.png",
             mobile: false
         }
     }
-    let active = 'Titan'
+    let active = Object.entries(projectData)[0][0]
     let { banner, description } = projectData.Titan
     let bannerToggle = true
-    let bannerIMG = `<img src="${banner}" class="img-fluid" alt="Project Banner" />`
+    let bannerIMG = `<img src="/imgs/banners/${banner}" class="img-fluid" alt="Project Banner" />`
     let bannerCol, bannerRow
     let magicnumber = "0px"
 
@@ -65,7 +65,7 @@
         bannerToggle = false;
         setTimeout(() => {
             bannerToggle = true;
-            bannerIMG = `<img src="${banner}" class="img-fluid" alt="Experience Banner" />`
+            bannerIMG = `<img src="imgs/banners/${banner}" class="img-fluid" alt="Experience Banner" />`
         }, 300)
     }
 
@@ -83,33 +83,34 @@
 
 
 
-<article class="container mt-5">
+<article class="container-fluid mt-5">
     <div class="row">
-        <div class="col-md-9">
-            <div class="row px-5 banner position-absolute" style="top: { magicnumber }">
-                {#if bannerToggle}
-                    <div class="col px-5" in:fly="{{ y: -20, duration: 300 }}" out:fly="{{ y: 20, duration: 300 }}">
-                        <div class="row">
-                            <p class="time-post">Titan Robotics 2022</p>
-                            <p class="desc-post">Showcasing robotics team for business partnerships.</p>
+            <div class="col-md-9" bind:this={bannerCol}>
+                <div class="row px-5 banner position-absolute">
+                    {#if bannerToggle}
+                        <div class="col px-5" in:fly="{{ y: -20, duration: 300 }}" out:fly="{{ y: 20, duration: 300 }}"
+                             style="top: { magicnumber }" bind:this={bannerRow}>
+                            <div class="row">
+                                <p class="time-post">Titan Robotics 2022</p>
+                                <p class="desc-post">Showcasing robotics team for business partnerships.</p>
+                            </div>
+                            <div class="row">
+                                {@html bannerIMG}
+                            </div>
                         </div>
-                        <div class="row">
-                            {@html bannerIMG}
-                        </div>
-                    </div>
-                {/if}
+                    {/if}
+                </div>
             </div>
-        </div>
-        <div class="col-md-3 position-relative">
-            <div class="row">
-                <div class="col-12">
-                    {#each Object.entries(projectData) as item }
-                        <Project id={item[0]} data={item[1]} active={active} on:hoveredProject={sawHover}/>
-                    {/each}
+            <div class="col-md-2 position-relative">
+                <div class="row">
+                    <div class="col-12">
+                        {#each Object.entries(projectData) as item }
+                            <Project id={item[0]} data={item[1]} active={active} on:hoveredProject={sawHover}/>
+                        {/each}
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
 </article>
 
 <style>

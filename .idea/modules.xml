@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/../diyhacks-app/.idea/diyhacks-app.iml" filepath="$PROJECT_DIR$/../diyhacks-app/.idea/diyhacks-app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../diyhacks-lp/.idea/diyhacks-lp.iml" filepath="$PROJECT_DIR$/../diyhacks-lp/.idea/diyhacks-lp.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/newprofile.iml" filepath="$PROJECT_DIR$/.idea/newprofile.iml" />
       <module fileurl="file://$PROJECT_DIR$/../sanozie.github.io/.idea/sanozie.github.io.iml" filepath="$PROJECT_DIR$/../sanozie.github.io/.idea/sanozie.github.io.iml" />
     </modules>

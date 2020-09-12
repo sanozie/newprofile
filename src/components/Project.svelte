@@ -22,7 +22,7 @@
         </span>
     <div class="row my-2 justify-content-center">
         <div class="col-9 h-100 company-logo-col">
-            <img src="${data.logo}" class="img-fluid company-logo" alt="Company Logo" />
+            <img src="imgs/logos/{data.logo}" class="img-fluid company-logo" alt="Company Logo" />
         </div>
     </div>
 </div>

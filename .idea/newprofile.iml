@@ -10,5 +10,6 @@
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="module" module-name="sanozie.github.io" />
     <orderEntry type="module" module-name="diyhacks-app" />
+    <orderEntry type="module" module-name="diyhacks-lp" />
   </component>
 </module>

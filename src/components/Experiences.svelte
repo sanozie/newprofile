@@ -67,8 +67,8 @@
             banner: "imgs/banners/pwpexp.png"
         }
     }
-    let active = 'PulseM'
-    let { banner, description } = experienceData.PulseM
+    let active = Object.entries(experienceData)[0][0]
+    let { banner, description } = experienceData[active]
     let bannerToggle = true
     let bannerIMG = `<img src="${banner}" class="img-fluid" alt="Experience Banner" />`
     let bannerCol, bannerRow
@@ -81,6 +81,7 @@
     function sawHover(e) {
         ({ id: active } = e.detail)
         switchBanner(e.detail)
+        moveBanner()
     }
 
     function switchBanner(details) {
@@ -93,10 +94,14 @@
     }
 
     function moveBanner() {
-        let floatEnvTop = bannerCol.getBoundingClientRect().top, floatEnvBottom = bannerCol.getBoundingClientRect().bottom
-        let floatElHeight = bannerRow.offsetHeight, floatEnvHeight = bannerCol.offsetHeight;
-        let startPoint = window.pageYOffset + floatEnvTop + floatElHeight, stopPoint = window.pageYOffset + floatEnvBottom - window.innerHeight
-        let windowBottomPos = window.innerHeight + window.scrollY, windowTopPos = window.scrollY
+        let floatEnvTop = bannerCol.getBoundingClientRect().top,
+            floatEnvBottom = bannerCol.getBoundingClientRect().bottom
+        let floatElHeight = bannerRow.offsetHeight,
+            floatEnvHeight = bannerCol.offsetHeight;
+        let startPoint = window.pageYOffset + floatEnvTop + floatElHeight + 100,
+            stopPoint = window.pageYOffset + floatEnvBottom - window.innerHeight + 100
+        let windowBottomPos = window.innerHeight + window.scrollY,
+            windowTopPos = window.scrollY
         if(windowBottomPos > startPoint && windowTopPos < stopPoint) {
             magicnumber = `${((windowBottomPos - startPoint)/stopPoint) * floatEnvHeight}px`
         }
@@ -104,29 +109,31 @@
 
 </script>
 
-<article class="container mt-5">
-    <div class="row">
-        <div class="col-md-6">
-            <div class="row">
-                <div class="col-12">
-                    {#each Object.entries(experienceData) as item }
-                        <Experience id={item[0]} data={item[1]} active={active} on:hoveredEXP={sawHover}/>
-                    {/each}
+<article class="container-fluid mt-5">
+    <div class=" pl-5 ml-5">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="row">
+                    <div class="col-12">
+                        {#each Object.entries(experienceData) as item }
+                            <Experience id={item[0]} data={item[1]} active={active} on:hoveredEXP={sawHover}/>
+                        {/each}
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="col-md-6 position-relative" bind:this={bannerCol}>
-            <div class="row px-5 banner position-absolute" style="top: { magicnumber }" bind:this={bannerRow} >
-                {#if bannerToggle}
-                <div class="col px-5" in:fly="{{ y: -20, duration: 300 }}" out:fly="{{ y: 20, duration: 300 }}">
-                    <div class="row">
-                        {@html bannerIMG}
-                    </div>
-                    <div class="row">
-                        <p class="p-3 mt-3 text-center">{description}</p>
-                    </div>
+            <div id="banner-col" class="col-md-6 position-relative" bind:this={bannerCol}>
+                <div class="row px-5 banner position-absolute" style="top: { magicnumber }" bind:this={bannerRow} >
+                    {#if bannerToggle}
+                        <div class="col px-5" in:fly="{{ y: -20, duration: 300 }}" out:fly="{{ y: 20, duration: 300 }}">
+                            <div class="row">
+                                {@html bannerIMG}
+                            </div>
+                            <div class="row">
+                                <p class="p-3 mt-3 text-center">{description}</p>
+                            </div>
+                        </div>
+                    {/if}
                 </div>
-                {/if}
             </div>
         </div>
     </div>
