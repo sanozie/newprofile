@@ -68,7 +68,7 @@
         }
     }
     let active = Object.entries(experienceData)[0][0]
-    let { banner, description } = experienceData[active]
+    let { banner, description, time } = experienceData[active]
     let bannerToggle = true
     let bannerIMG = `<img src="${banner}" class="img-fluid" alt="Experience Banner" />`
     let bannerCol, bannerRow
@@ -110,7 +110,7 @@
 </script>
 
 <article class="container-fluid mt-5">
-    <div class=" pl-5 ml-5">
+    <div class=" pl-md-5 ml-md-5">
         <div class="row">
             <div class="col-md-6">
                 <div class="row">
@@ -121,15 +121,16 @@
                     </div>
                 </div>
             </div>
-            <div id="banner-col" class="col-md-6 position-relative" bind:this={bannerCol}>
+            <div id="banner-col" class="col-md-6 d-none d-md-flex position-relative" bind:this={bannerCol}>
                 <div class="row px-5 banner position-absolute" style="top: { magicnumber }" bind:this={bannerRow} >
                     {#if bannerToggle}
                         <div class="col px-5" in:fly="{{ y: -20, duration: 300 }}" out:fly="{{ y: 20, duration: 300 }}">
-                            <div class="row">
-                                {@html bannerIMG}
+                            <div class="row text-center justify-content-center">
+                                <p class="time-post mb-0" >{time}</p>
+                                <p class="desc-post text-center">{description}</p>
                             </div>
                             <div class="row">
-                                <p class="p-3 mt-3 text-center">{description}</p>
+                                {@html bannerIMG}
                             </div>
                         </div>
                     {/if}
@@ -144,4 +145,18 @@
         transition: 0.1s ease-out;
         min-height: 100px;
     }
+
+    p.time-post {
+        font-weight: 100;
+        font-size: calc(0.8rem + 0.5vw);
+        padding: 0.4rem;
+    }
+    p.desc-post {
+        font-weight: 300;
+        font-size: calc(1rem + 0.5vw);
+        padding: 0.3rem;
+        padding-bottom: 1rem;
+    }
+
+
 </style>
