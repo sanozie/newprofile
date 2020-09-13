@@ -21,7 +21,7 @@
   <component name="ChangeListManager">
     <list default="true" id="7b1b9484-9ebb-4281-940e-225f445b4673" name="Default Changelist" comment="">
       <change afterPath="$PROJECT_DIR$/../diyhacks-app/src/pages/[screen].js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/SamuelAnozie.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/utils/ui.js" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../sanozie.github.io/.idea/sanozie.github.io.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../diyhacks-app/.next/build-manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/../diyhacks-app/.next/build-manifest.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../diyhacks-app/.next/server/pages-manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/../diyhacks-app/.next/server/pages-manifest.json" afterDir="false" />
@@ -50,8 +50,11 @@
       <change beforePath="$PROJECT_DIR$/../diyhacks-app/src/pages/Submission/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/../diyhacks-app/src/pages/screens/Submission/index.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../diyhacks-app/src/pages/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/../diyhacks-app/src/pages/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Experience.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Experience.svelte" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Experiences.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Experiences.svelte" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/Profile.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Profile.svelte" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Project.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Project.svelte" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/ProjectEnv.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ProjectEnv.svelte" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/Portfolio.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Portfolio.svelte" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -138,7 +141,7 @@
       <workItem from="1597617097329" duration="444000" />
       <workItem from="1597801370255" duration="921000" />
       <workItem from="1599892824786" duration="4121000" />
-      <workItem from="1599944377827" duration="3807000" />
+      <workItem from="1599944377827" duration="10206000" />
     </task>
     <servers />
   </component>
@@ -162,10 +165,11 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="354" y="135" key="#Inspections/0.0.1440.900@0.0.1440.900" timestamp="1596891729031" />
-    <state x="216" y="132" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1597803032277">
-      <screen x="37" y="23" width="1403" height="877" />
+    <state x="207" y="132" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1600024646400">
+      <screen x="27" y="23" width="1413" height="877" />
     </state>
     <state x="184" y="112" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1440.900@0.0.1440.900" timestamp="1597601308349" />
+    <state x="207" y="132" key="#com.intellij.execution.impl.EditConfigurationsDialog/27.23.1413.877@27.23.1413.877" timestamp="1600024646400" />
     <state x="216" y="132" key="#com.intellij.execution.impl.EditConfigurationsDialog/37.23.1403.877/1440.-845.1920.1057@37.23.1403.877" timestamp="1597803032277" />
     <state x="442" y="250" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1597286919922">
       <screen x="0" y="0" width="1440" height="900" />

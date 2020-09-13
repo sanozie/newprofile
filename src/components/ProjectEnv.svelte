@@ -1,6 +1,7 @@
 <script>
     import Project from './Project.svelte'
     import { fade, fly } from 'svelte/transition';
+    import { moveBanner } from '../utils/ui'
 
     let projectData = {
         DIYHacks: {
@@ -45,14 +46,14 @@
         }
     }
     let active = Object.entries(projectData)[0][0]
-    let { banner, description } = projectData.Titan
+    let { banner, description } = projectData[active]
     let bannerToggle = true
     let bannerIMG = `<img src="/imgs/banners/${banner}" class="img-fluid" alt="Project Banner" />`
     let bannerCol, bannerRow
     let magicnumber = "0px"
 
     window.addEventListener('scroll', () => {
-        moveBanner()
+        magicnumber = moveBanner(bannerCol, bannerRow)
     })
 
     function sawHover(e) {
@@ -69,39 +70,28 @@
         }, 300)
     }
 
-    function moveBanner() {
-        let floatEnvTop = bannerCol.getBoundingClientRect().top, floatEnvBottom = bannerCol.getBoundingClientRect().bottom
-        let floatElHeight = bannerRow.offsetHeight, floatEnvHeight = bannerCol.offsetHeight;
-        let startPoint = window.pageYOffset + floatEnvTop + floatElHeight, stopPoint = window.pageYOffset + floatEnvBottom - window.innerHeight
-        let windowBottomPos = window.innerHeight + window.scrollY, windowTopPos = window.scrollY
-        if(windowBottomPos > startPoint && windowTopPos < stopPoint) {
-            magicnumber = `${((windowBottomPos - startPoint)/stopPoint) * floatEnvHeight}px`
-        }
-    }
-
 </script>
 
 
 
 <article class="container-fluid mt-5">
-    <div class="row">
-            <div class="col-md-9" bind:this={bannerCol}>
+    <div class="row justify-content-center justify-content-md-start">
+            <div class="col-md-9 d-none d-md-flex" bind:this={bannerCol}>
                 <div class="row px-5 banner position-absolute">
                     {#if bannerToggle}
                         <div class="col px-5" in:fly="{{ y: -20, duration: 300 }}" out:fly="{{ y: 20, duration: 300 }}"
                              style="top: { magicnumber }" bind:this={bannerRow}>
                             <div class="row">
-                                <p class="time-post">Titan Robotics 2022</p>
-                                <p class="desc-post">Showcasing robotics team for business partnerships.</p>
+                                {@html bannerIMG}
                             </div>
                             <div class="row">
-                                {@html bannerIMG}
+                                <p class="desc-post">{description}</p>
                             </div>
                         </div>
                     {/if}
                 </div>
             </div>
-            <div class="col-md-2 position-relative">
+            <div class="col-md-2 col-6 position-relative">
                 <div class="row">
                     <div class="col-12">
                         {#each Object.entries(projectData) as item }
@@ -117,5 +107,12 @@
     .banner {
         transition: 0.1s ease-out;
         min-height: 100px;
+    }
+
+    p.desc-post {
+        font-weight: 300;
+        font-size: calc(1rem + 0.5vw);
+        padding: 0.3rem;
+        padding-bottom: 1rem;
     }
 </style>

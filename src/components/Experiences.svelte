@@ -1,6 +1,7 @@
 <script>
     import Experience from './Experience.svelte'
     import { fade, fly } from 'svelte/transition';
+    import { moveBanner } from '../utils/ui'
 
     let experienceData = {
         PulseM: {
@@ -75,13 +76,13 @@
     let magicnumber = "0px"
 
     window.addEventListener('scroll', () => {
-        moveBanner()
+        magicnumber = moveBanner(bannerCol, bannerRow)
     })
 
     function sawHover(e) {
         ({ id: active } = e.detail)
         switchBanner(e.detail)
-        moveBanner()
+        magicnumber = moveBanner(bannerCol, bannerRow)
     }
 
     function switchBanner(details) {
@@ -91,20 +92,6 @@
             bannerToggle = true;
             bannerIMG = `<img src="${banner}" class="img-fluid" alt="Experience Banner" />`
         }, 300)
-    }
-
-    function moveBanner() {
-        let floatEnvTop = bannerCol.getBoundingClientRect().top,
-            floatEnvBottom = bannerCol.getBoundingClientRect().bottom
-        let floatElHeight = bannerRow.offsetHeight,
-            floatEnvHeight = bannerCol.offsetHeight;
-        let startPoint = window.pageYOffset + floatEnvTop + floatElHeight + 100,
-            stopPoint = window.pageYOffset + floatEnvBottom - window.innerHeight + 100
-        let windowBottomPos = window.innerHeight + window.scrollY,
-            windowTopPos = window.scrollY
-        if(windowBottomPos > startPoint && windowTopPos < stopPoint) {
-            magicnumber = `${((windowBottomPos - startPoint)/stopPoint) * floatEnvHeight}px`
-        }
     }
 
 </script>
