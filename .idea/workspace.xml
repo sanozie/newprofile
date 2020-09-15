@@ -48,8 +48,7 @@
       <change beforePath="$PROJECT_DIR$/../diyhacks-app/src/pages/Submission/Submission.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/../diyhacks-app/src/pages/screens/Submission/Submission.module.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../diyhacks-app/src/pages/Submission/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/../diyhacks-app/src/pages/screens/Submission/index.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../diyhacks-app/src/pages/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/../diyhacks-app/src/pages/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/Social.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Social.svelte" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projects/CodeAuthority/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/projects/CodeAuthority/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -78,22 +77,22 @@
     <property name="TERMINAL_CUSTOM_COMMANDS_GOT_IT" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="dart.analysis.tool.window.visible" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/public/imgs" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/projects/CodeAuthority" />
     <property name="nodejs_package_manager_path" value="yarn" />
     <property name="ts.external.directory.path" value="$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/public/imgs" />
-      <recent name="$PROJECT_DIR$/public/imgs/logos" />
-      <recent name="$PROJECT_DIR$/public/imgs/banners" />
-      <recent name="$PROJECT_DIR$/src/components" />
-      <recent name="$PROJECT_DIR$/public/imgs/designs" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/public/imgs" />
       <recent name="$PROJECT_DIR$/src/pages" />
       <recent name="$PROJECT_DIR$" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/projects/CodeAuthority" />
+      <recent name="$PROJECT_DIR$/public/imgs" />
+      <recent name="$PROJECT_DIR$/public/imgs/logos" />
+      <recent name="$PROJECT_DIR$/public/imgs/banners" />
+      <recent name="$PROJECT_DIR$/src/components" />
     </key>
   </component>
   <component name="RunManager" selected="JavaScript Debug.diyhacks-lp">
@@ -141,6 +140,7 @@
       <workItem from="1599892824786" duration="4121000" />
       <workItem from="1599944377827" duration="10331000" />
       <workItem from="1600138919034" duration="9829000" />
+      <workItem from="1600198019135" duration="110000" />
     </task>
     <servers />
   </component>
