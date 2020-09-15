@@ -48,7 +48,8 @@
             </span>
 
             , designed in <a href="https://www.adobe.com/products/xd.html" target="_blank">Adobe XD</a>
-            , and coded using <a href="https://svelte.dev/" target="_blank">Svelte.</a>
+            , coded using <a href="https://svelte.dev/" target="_blank">Svelte</a>
+            , and deployed on <a href="https://vercel.com/" target="_blank">Vercel.</a>
             <br/>
             You can view the code at my <a href="https://github.com/sanozie/newprofile" target="_blank">Repo</a></p>
     </div>

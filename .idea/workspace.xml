@@ -49,13 +49,6 @@
       <change beforePath="$PROJECT_DIR$/../diyhacks-app/src/pages/Submission/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/../diyhacks-app/src/pages/screens/Submission/index.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../diyhacks-app/src/pages/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/../diyhacks-app/src/pages/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.svelte" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Experience.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Experience.svelte" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Experiences.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Experiences.svelte" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Project.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Project.svelte" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/ProjectEnv.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ProjectEnv.svelte" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/Portfolio.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Portfolio.svelte" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/Profile.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Profile.svelte" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/Social.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Social.svelte" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -147,7 +140,7 @@
       <workItem from="1597801370255" duration="921000" />
       <workItem from="1599892824786" duration="4121000" />
       <workItem from="1599944377827" duration="10331000" />
-      <workItem from="1600138919034" duration="9260000" />
+      <workItem from="1600138919034" duration="9707000" />
     </task>
     <servers />
   </component>
