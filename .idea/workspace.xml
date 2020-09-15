@@ -21,7 +21,13 @@
   <component name="ChangeListManager">
     <list default="true" id="7b1b9484-9ebb-4281-940e-225f445b4673" name="Default Changelist" comment="">
       <change afterPath="$PROJECT_DIR$/../diyhacks-app/src/pages/[screen].js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/utils/ui.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/imgs/SocialBack.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/imgs/profile.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/imgs/socialers/github.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/imgs/socialers/linkedin.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/imgs/socialers/mail.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/imgs/socialers/tiktok.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/Social.svelte" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../sanozie.github.io/.idea/sanozie.github.io.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../diyhacks-app/.next/build-manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/../diyhacks-app/.next/build-manifest.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../diyhacks-app/.next/server/pages-manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/../diyhacks-app/.next/server/pages-manifest.json" afterDir="false" />
@@ -50,11 +56,7 @@
       <change beforePath="$PROJECT_DIR$/../diyhacks-app/src/pages/Submission/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/../diyhacks-app/src/pages/screens/Submission/index.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../diyhacks-app/src/pages/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/../diyhacks-app/src/pages/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Experience.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Experience.svelte" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Experiences.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Experiences.svelte" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Project.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Project.svelte" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/ProjectEnv.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ProjectEnv.svelte" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/Portfolio.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Portfolio.svelte" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.svelte" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -83,19 +85,22 @@
     <property name="TERMINAL_CUSTOM_COMMANDS_GOT_IT" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="dart.analysis.tool.window.visible" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/public/imgs/logos" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/public/imgs" />
     <property name="nodejs_package_manager_path" value="yarn" />
     <property name="ts.external.directory.path" value="$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/public/imgs" />
       <recent name="$PROJECT_DIR$/public/imgs/logos" />
       <recent name="$PROJECT_DIR$/public/imgs/banners" />
       <recent name="$PROJECT_DIR$/src/components" />
       <recent name="$PROJECT_DIR$/public/imgs/designs" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/public/imgs" />
+      <recent name="$PROJECT_DIR$/src/pages" />
+      <recent name="$PROJECT_DIR$" />
     </key>
   </component>
   <component name="RunManager" selected="JavaScript Debug.diyhacks-lp">
@@ -141,7 +146,8 @@
       <workItem from="1597617097329" duration="444000" />
       <workItem from="1597801370255" duration="921000" />
       <workItem from="1599892824786" duration="4121000" />
-      <workItem from="1599944377827" duration="10206000" />
+      <workItem from="1599944377827" duration="10331000" />
+      <workItem from="1600138919034" duration="6335000" />
     </task>
     <servers />
   </component>

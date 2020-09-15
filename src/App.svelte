@@ -2,6 +2,7 @@
 	import Landing from './pages/Landing.svelte'
 	import Profile from './pages/Profile.svelte'
 	import Portfolio from './pages/Portfolio.svelte'
+	import Social from "./pages/Social.svelte";
 </script>
 
 <style>
@@ -15,4 +16,5 @@
 	<Landing />
 	<Profile />
 	<Portfolio />
+	<Social />
 </main>
