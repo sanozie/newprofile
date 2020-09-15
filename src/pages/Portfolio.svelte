@@ -1,5 +1,7 @@
 <script>
     import ProjectEnv from '../components/ProjectEnv.svelte'
+
+    export let mobile
 </script>
 
 <section class="container-fluid">
@@ -7,10 +9,7 @@
         <h1 class="pt-3 pb-3">I've made a couple sites &#128071;.</h1>
         <h3 class="pt-1 pb-1">Feel free to take a look!</h3>
     </div>
-    <ProjectEnv />
-    <div class="container">
-
-    </div>
+    <ProjectEnv mobile={mobile}/>
 </section>
 
 <style lang="scss">

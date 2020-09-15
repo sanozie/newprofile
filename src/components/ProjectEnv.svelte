@@ -3,6 +3,8 @@
     import { fade, fly } from 'svelte/transition';
     import { moveBanner } from '../utils/ui'
 
+    export let mobile
+
     let projectData = {
         DIYHacks: {
             title: "DIYHacks",
@@ -95,7 +97,7 @@
                 <div class="row">
                     <div class="col-12">
                         {#each Object.entries(projectData) as item }
-                            <Project id={item[0]} data={item[1]} active={active} on:hoveredProject={sawHover}/>
+                            <Project id={item[0]} data={item[1]} mobile={mobile} active={active} on:hoveredProject={sawHover}/>
                         {/each}
                     </div>
                 </div>

@@ -21,13 +21,6 @@
   <component name="ChangeListManager">
     <list default="true" id="7b1b9484-9ebb-4281-940e-225f445b4673" name="Default Changelist" comment="">
       <change afterPath="$PROJECT_DIR$/../diyhacks-app/src/pages/[screen].js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/imgs/SocialBack.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/imgs/profile.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/imgs/socialers/github.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/imgs/socialers/linkedin.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/imgs/socialers/mail.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/imgs/socialers/tiktok.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/Social.svelte" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../sanozie.github.io/.idea/sanozie.github.io.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../diyhacks-app/.next/build-manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/../diyhacks-app/.next/build-manifest.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../diyhacks-app/.next/server/pages-manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/../diyhacks-app/.next/server/pages-manifest.json" afterDir="false" />
@@ -57,6 +50,13 @@
       <change beforePath="$PROJECT_DIR$/../diyhacks-app/src/pages/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/../diyhacks-app/src/pages/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.svelte" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Experience.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Experience.svelte" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Experiences.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Experiences.svelte" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Project.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Project.svelte" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/ProjectEnv.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ProjectEnv.svelte" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/Portfolio.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Portfolio.svelte" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/Profile.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Profile.svelte" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/Social.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Social.svelte" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -147,7 +147,7 @@
       <workItem from="1597801370255" duration="921000" />
       <workItem from="1599892824786" duration="4121000" />
       <workItem from="1599944377827" duration="10331000" />
-      <workItem from="1600138919034" duration="6335000" />
+      <workItem from="1600138919034" duration="9260000" />
     </task>
     <servers />
   </component>
@@ -185,6 +185,10 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="408" y="193" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1440.900@0.0.1440.900" timestamp="1597601389165" />
+    <state x="1836" y="-563" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1600148067043">
+      <screen x="1440" y="-845" width="1920" height="1057" />
+    </state>
+    <state x="1836" y="-563" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/27.23.1413.877/1440.-845.1920.1057@1440.-845.1920.1057" timestamp="1600148067043" />
     <state width="1419" height="298" key="GridCell.Tab.0.bottom" timestamp="1596828277567">
       <screen x="0" y="0" width="1440" height="900" />
     </state>

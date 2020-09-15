@@ -3,6 +3,7 @@
 	import Profile from './pages/Profile.svelte'
 	import Portfolio from './pages/Portfolio.svelte'
 	import Social from "./pages/Social.svelte";
+	let mobile = window.innerWidth < 768
 </script>
 
 <style>
@@ -13,8 +14,8 @@
 </style>
 
 <main>
-	<Landing />
-	<Profile />
-	<Portfolio />
+	<Landing  />
+	<Profile mobile={mobile}/>
+	<Portfolio mobile={mobile}/>
 	<Social />
 </main>

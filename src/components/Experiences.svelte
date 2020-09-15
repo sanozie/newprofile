@@ -3,6 +3,8 @@
     import { fade, fly } from 'svelte/transition';
     import { moveBanner } from '../utils/ui'
 
+    export let mobile
+
     let experienceData = {
         PulseM: {
             company: "pulseM",
@@ -10,6 +12,7 @@
             logo: "imgs/logos/pulsem.png",
             link: "https://pulsem.me",
             time: "July 2020 - Present",
+            mobile: true,
             description: "Creating A/B Framework with Vue.js & TypeScript",
             banner: "imgs/banners/pulsemexp.png"
         },
@@ -19,6 +22,7 @@
             logo: "imgs/logos/wyzant.png",
             link: "https://www.wyzant.com/match/tutor/88184101",
             time: "May 2020 - Present",
+            mobile: true,
             description: "Assisting students in various web development bootcamps and classes.",
             banner: "imgs/banners/wyzantexp.gif"
         },
@@ -28,6 +32,7 @@
             logo: "imgs/logos/varsitytutors.png",
             link: "https://www.varsitytutors.com/tutors/878747878",
             time: "Feb 2020 - Present",
+            mobile: true,
             description: "Assisting students in various web development bootcamps and classes.",
             banner: "imgs/banners/varsityexp.png"
         },
@@ -35,8 +40,9 @@
             company: "Keyring",
             title: "Software Engineering Intern",
             logo: "imgs/logos/keyringlogo.png",
-            link: "https://joinkeyring.com",
+            link: "https://www.producthunt.com/upcoming/keyring-bundle-media-subscriptions",
             time: "Apr 2020 - Jun 2020",
+            mobile: true,
             description: "Bundling platform for streaming services.",
             banner: "imgs/banners/keyringexp.svg"
         },
@@ -46,6 +52,7 @@
             logo: "imgs/logos/cootbie.svg",
             link: "https://cootbie.com",
             time: "Jul 2019 - Jan 2020",
+            mobile: true,
             description: "Giving job-seekers a voice in the journey of recruitment.",
             banner: "imgs/banners/cootbieexp.png"
         },
@@ -55,6 +62,7 @@
             logo: "imgs/logos/titan2022.png",
             link: "https://titanrobotics2022.com",
             time: "Jun 2019 - Jul 2019",
+            mobile: true,
             description: "Showcasing robotics team for business partnerships.",
             banner: "imgs/banners/roboticsexp.png"
         },
@@ -64,6 +72,7 @@
             logo: "imgs/logos/pwp.png",
             link: "https://packedwithpurpose.gifts",
             time: "Jun 2018 - Jul 2018",
+            mobile: true,
             description: "Corporate gifting combined with sustainable practices.",
             banner: "imgs/banners/pwpexp.png"
         }
@@ -103,7 +112,8 @@
                 <div class="row">
                     <div class="col-12">
                         {#each Object.entries(experienceData) as item }
-                            <Experience id={item[0]} data={item[1]} active={active} on:hoveredEXP={sawHover}/>
+                            <Experience id={item[0]} data={item[1]} mobile={mobile}
+                                    active={active} on:hoveredEXP={sawHover}/>
                         {/each}
                     </div>
                 </div>

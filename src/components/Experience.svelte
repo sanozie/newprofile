@@ -5,6 +5,7 @@
     export let id
     export let data
     export let active
+    export let mobile
 
     const dispatch = createEventDispatcher();
 
@@ -14,7 +15,8 @@
 </script>
 
 <div class="info-wrapper exp-info-wrapper position-relative" class:info-wrapper-hover={active === id}
-     on:mouseenter={hoveredEXP} on:click={redirectToExternal(data.link, data.mobile)}>
+     class:info-wrapper-mobile={mobile} on:mouseenter={hoveredEXP}
+     on:click={redirectToExternal(data.mobile, data.link)}>
     <span class = "externalButton center">
         <svg class="bi bi-box-arrow-up-right externalIcon" width="1em" height="1em" viewBox="0 0 16 16" fill="white" xmlns="http://www.w3.org/2000/svg">
             <path fill-rule="evenodd" d="M1.5 13A1.5 1.5 0 003 14.5h8a1.5 1.5 0 001.5-1.5V9a.5.5 0 00-1 0v4a.5.5 0 01-.5.5H3a.5.5 0 01-.5-.5V5a.5.5 0 01.5-.5h4a.5.5 0 000-1H3A1.5 1.5 0 001.5 5v8zm7-11a.5.5 0 01.5-.5h5a.5.5 0 01.5.5v5a.5.5 0 01-1 0V2.5H9a.5.5 0 01-.5-.5z" clip-rule="evenodd"/>
@@ -114,6 +116,16 @@
         .externalButton {
             opacity: 1;
             transition: 0.2s ease-out;
+        }
+    }
+
+    .info-wrapper-mobile {
+        opacity: 1;
+        box-shadow: -2px 6px 10px rgba(104, 104, 104, 0.1);
+        background-color: rgba(255, 255, 255, 0.2);
+        cursor: pointer;
+        .externalButton {
+            opacity: 0;
         }
     }
 
