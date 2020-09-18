@@ -48,10 +48,9 @@
       <change beforePath="$PROJECT_DIR$/../diyhacks-app/src/pages/Submission/Submission.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/../diyhacks-app/src/pages/screens/Submission/Submission.module.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../diyhacks-app/src/pages/Submission/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/../diyhacks-app/src/pages/screens/Submission/index.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../diyhacks-app/src/pages/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/../diyhacks-app/src/pages/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/newprofile.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/newprofile.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.svelte" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sanozie.github.io/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../sanozie.github.io/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -66,7 +65,7 @@
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../static-sites" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1fmcr9673oWGnDOEQ7kzlmN6Yr0" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -144,6 +143,7 @@
       <workItem from="1599944377827" duration="10331000" />
       <workItem from="1600138919034" duration="9829000" />
       <workItem from="1600198019135" duration="1451000" />
+      <workItem from="1600446345530" duration="82000" />
     </task>
     <servers />
   </component>
