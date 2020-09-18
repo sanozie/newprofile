@@ -4,5 +4,6 @@
     <mapping directory="" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/../diyhacks-app" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/../diyhacks-lp" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/../static-sites" vcs="Git" />
   </component>
 </project>
