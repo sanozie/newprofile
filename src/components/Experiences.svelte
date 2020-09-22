@@ -14,7 +14,8 @@
             time: "July 2020 - Present",
             mobile: true,
             description: "Creating A/B Framework with Vue.js & TypeScript",
-            banner: "imgs/banners/pulsemexp.png"
+            bannerPNG: "imgs/banners/pulsemexp.png",
+            bannerWEBP: "imgs/banners/pulsemexp.webp",
         },
         Wyzant: {
             company: "Wyzant",
@@ -24,7 +25,8 @@
             time: "May 2020 - Present",
             mobile: true,
             description: "Assisting students in various web development bootcamps and classes.",
-            banner: "imgs/banners/wyzantexp.gif"
+            bannerPNG: "imgs/banners/wyzantexp.png",
+            bannerWEBP: "imgs/banners/wyzantexp.webp"
         },
         VT: {
             company: "Varsity Tutors",
@@ -34,7 +36,8 @@
             time: "Feb 2020 - Present",
             mobile: true,
             description: "Assisting students in various web development bootcamps and classes.",
-            banner: "imgs/banners/varsityexp.png"
+            bannerPNG: "imgs/banners/varsityexp.png",
+            bannerWEBP: "imgs/banners/varsityexp.webp"
         },
         Keyring: {
             company: "Keyring",
@@ -44,7 +47,8 @@
             time: "Apr 2020 - Jun 2020",
             mobile: true,
             description: "Bundling platform for streaming services.",
-            banner: "imgs/banners/keyringexp.svg"
+            bannerPNG: "imgs/banners/keyringexp.svg",
+            bannerWEBP: "imgs/banners/keyringexp.webp"
         },
         Cootbie: {
             company: "Cootbie",
@@ -54,7 +58,8 @@
             time: "Jul 2019 - Jan 2020",
             mobile: true,
             description: "Giving job-seekers a voice in the journey of recruitment.",
-            banner: "imgs/banners/cootbieexp.png"
+            bannerPNG: "imgs/banners/cootbieexp.png",
+            bannerWEBP: "imgs/banners/cootbieexp.webp"
         },
         Titan: {
             company: "Titan Robotics 2022",
@@ -64,7 +69,8 @@
             time: "Jun 2019 - Jul 2019",
             mobile: true,
             description: "Showcasing robotics team for business partnerships.",
-            banner: "imgs/banners/roboticsexp.png"
+            bannerPNG: "imgs/banners/roboticsexp.png",
+            bannerWEBP: "imgs/banners/roboticsexp.webp"
         },
         PWP: {
             company: "Packed With Purpose",
@@ -74,13 +80,19 @@
             time: "Jun 2018 - Jul 2018",
             mobile: true,
             description: "Corporate gifting combined with sustainable practices.",
-            banner: "imgs/banners/pwpexp.png"
+            bannerPNG: "imgs/banners/pwpexp.png",
+            bannerWEBP: "imgs/banners/pwpexp.webp"
         }
     }
     let active = Object.entries(experienceData)[0][0]
-    let { banner, description, time } = experienceData[active]
+    let { bannerWEBP, bannerPNG, description, time } = experienceData[active]
     let bannerToggle = true
-    let bannerIMG = `<img src="${banner}" class="img-fluid" alt="Experience Banner" />`
+    let bannerIMG = `
+            <picture>
+                <source srcset="${bannerWEBP}" type="image/webp">
+                <source srcset="${bannerPNG}" type="image/png">
+                <img src="${bannerPNG}" alt="Experience Banner" class="img-fluid">
+            </picture>`
     let bannerCol, bannerRow
     let magicnumber = "0px"
 
@@ -88,19 +100,29 @@
         magicnumber = moveBanner(bannerCol, bannerRow)
     })
 
-    function sawHover(e) {
+    async function sawHover(e) {
         ({ id: active } = e.detail)
         switchBanner(e.detail)
-        magicnumber = moveBanner(bannerCol, bannerRow)
     }
 
     function switchBanner(details) {
-        ({ banner, description } = details)
+        let  { bannerWEBP, bannerPNG } = details;
+        ({ description } = details)
         bannerToggle = false;
         setTimeout(() => {
             bannerToggle = true;
-            bannerIMG = `<img src="${banner}" class="img-fluid" alt="Experience Banner" />`
+            // bannerIMG = `<img src="${banner}" class="img-fluid" alt="Experience Banner" />`
+            bannerIMG = `
+            <picture>
+                <source srcset="${bannerWEBP}" type="image/webp">
+                <source srcset="${bannerPNG}" type="image/png">
+                <img src="${bannerPNG}" alt="Alt Text!" class="img-fluid">
+            </picture>`
         }, 300)
+    }
+
+    let outro = () => {
+        magicnumber = moveBanner(bannerCol, bannerRow)
     }
 
 </script>
@@ -121,7 +143,7 @@
             <div id="banner-col" class="col-md-6 d-none d-md-flex position-relative" bind:this={bannerCol}>
                 <div class="row px-5 banner position-absolute" style="top: { magicnumber }" bind:this={bannerRow} >
                     {#if bannerToggle}
-                        <div class="col px-5" in:fly="{{ y: -20, duration: 300 }}" out:fly="{{ y: 20, duration: 300 }}">
+                        <div class="col px-5" in:fly="{{ y: -20, duration: 300 }}" out:fly="{{ y: 20, duration: 300 }}" on:introend="{outro}">
                             <div class="row text-center justify-content-center">
                                 <p class="time-post mb-0" >{time}</p>
                                 <p class="desc-post text-center">{description}</p>

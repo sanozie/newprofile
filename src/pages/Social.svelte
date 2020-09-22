@@ -11,28 +11,28 @@
                 </div>
             </div>
             <div class="col-md-2 col-3 center-vert">
-                <img id="profpic" src="/imgs/profile.jpg" class="img-fluid" />
+                <img id="profpic" src="/imgs/profile.png" class="img-fluid" alt="Profile Picture"/>
             </div>
             <div class="col-md-5 center-vert">
-                <div class="row justify-content-center">
+                <div class="row pl-5 mt-5 mt-md-0 justify-content-between">
                     <div class="col-2 center-vert">
                         <a href="https://linkedin.com/in/samanozie" target="_blank">
-                            <img src="/imgs/socialers/linkedin.png" class="socialericon img-fluid p-2"/>
+                            <img src="/imgs/socialers/linkedin.png" class="socialericon img-fluid" alt="Linkedin Icon"/>
                         </a>
                     </div>
                     <div class="col-2 center-vert">
                         <a href="https://github.com/sanozie" target="_blank">
-                            <img src="/imgs/socialers/github.png" class="socialericon img-fluid p-2"/>
+                            <img src="/imgs/socialers/github.png" class="socialericon img-fluid" alt="Github icon"/>
                         </a>
                     </div>
                     <div class="col-2 center-vert">
                         <a href="mailto:sanoziec@gmail.com">
-                            <img src="/imgs/socialers/mail.png" class="socialericon img-fluid p-2"/>
+                            <img src="/imgs/socialers/mail.png" class="socialericon img-fluid" alt="Mail icon"/>
                         </a>
                     </div>
                     <div class="col-2 center-vert">
                         <a href="https://www.tiktok.com/@profit_made_it" target="_blank">
-                            <img src="/imgs/socialers/tiktok.png" class="socialericon img-fluid p-2"/>
+                            <img src="/imgs/socialers/tiktok.png" class="socialericon img-fluid" alt="TikTok Icon"/>
                         </a>
                     </div>
                 </div>

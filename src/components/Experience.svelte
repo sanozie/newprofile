@@ -10,7 +10,7 @@
     const dispatch = createEventDispatcher();
 
     function hoveredEXP() {
-        dispatch('hoveredEXP', { id, banner: data.banner, description: data.description });
+        dispatch('hoveredEXP', { id, bannerPNG: data.bannerPNG, bannerWEBP: data.bannerWEBP, description: data.description });
     }
 </script>
 

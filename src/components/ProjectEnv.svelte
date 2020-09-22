@@ -11,7 +11,8 @@
             logo: "diyhackslogo.png",
             link: "https://diyhacks.tech",
             description: "Dynamic hackathon & project creation for students.",
-            banner: "diyhacksback.png",
+            bannerPNG: "imgs/banners/diyhacksback.png",
+            bannerWEBP: "imgs/banners/diyhacksback.webp",
             mobile: true
         },
         Titan: {
@@ -19,7 +20,8 @@
             logo: "titan2022.png",
             link: "https://titanrobotics2022.com",
             description: "Redesigning robotics team website for business partnerships.",
-            banner: "titanback.png",
+            bannerPNG: "imgs/banners/titanback.png",
+            bannerWEBP: "imgs/banners/titanback.webp",
             mobile: true
         },
         CA: {
@@ -27,7 +29,8 @@
             logo: "calogo.png",
             link: "./CodeAuthority",
             description: "Designed and developed interview website within a week.",
-            banner: "caback.png",
+            bannerPNG: "imgs/banners/caback.png",
+            bannerWEBP: "imgs/banners/caback.webp",
             mobile: false
         },
         Bordar: {
@@ -35,7 +38,8 @@
             logo: "bordarlogo.png",
             link: "https://bordar.site",
             description: "Data analytics for curriculum development.",
-            banner: "bordarback.png",
+            bannerPNG: "imgs/banners/bordarback.png",
+            bannerWEBP: "imgs/banners/bordarback.webp",
             mobile: true
         },
         SEVC: {
@@ -43,14 +47,19 @@
             logo: "sevclogo.png",
             link: "./SEVC",
             description: "Student-driven ventures impacting world sustainability.",
-            banner: "sevcback.png",
+            bannerPNG: "imgs/banners/sevcback.png",
+            bannerWEBP: "imgs/banners/sevcback.webp",
             mobile: false
         }
     }
     let active = Object.entries(projectData)[0][0]
-    let { banner, description } = projectData[active]
+    let { bannerPNG, bannerWEBP, description } = projectData[active]
     let bannerToggle = true
-    let bannerIMG = `<img src="/imgs/banners/${banner}" class="img-fluid" alt="Project Banner" />`
+    let bannerIMG = `<picture>
+                <source srcset="${bannerWEBP}" type="image/webp">
+                <source srcset="${bannerPNG}" type="image/png">
+                <img src="${bannerPNG}" alt="Project Banner" class="img-fluid">
+            </picture>`
     let bannerCol, bannerRow
     let magicnumber = "0px"
 
@@ -64,11 +73,16 @@
     }
 
     function switchBanner(details) {
-        ({ banner, description } = details)
+        ({ bannerWEBP, bannerPNG, description } = details)
         bannerToggle = false;
         setTimeout(() => {
             bannerToggle = true;
-            bannerIMG = `<img src="imgs/banners/${banner}" class="img-fluid" alt="Experience Banner" />`
+            bannerIMG = `
+            <picture>
+                <source srcset="${bannerWEBP}" type="image/webp">
+                <source srcset="${bannerPNG}" type="image/png">
+                <img src="${bannerPNG}" alt="Project Banner" class="img-fluid">
+            </picture>`
         }, 300)
     }
 

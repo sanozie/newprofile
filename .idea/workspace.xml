@@ -21,7 +21,20 @@
   <component name="ChangeListManager">
     <list default="true" id="7b1b9484-9ebb-4281-940e-225f445b4673" name="Default Changelist" comment="">
       <change afterPath="$PROJECT_DIR$/../diyhacks-app/src/pages/[screen].js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../sanozie.github.io/.idea/sanozie.github.io.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/imgs/banners/bordarback.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/imgs/banners/caback.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/imgs/banners/cootbieexp.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/imgs/banners/diyhacksback.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/imgs/banners/keyringexp.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/imgs/banners/pulsemexp.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/imgs/banners/pwpexp.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/imgs/banners/roboticsexp.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/imgs/banners/sevcback.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/imgs/banners/titanback.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/imgs/banners/varsityexp.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/imgs/banners/wyzantexp.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/imgs/banners/wyzantexp.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/imgs/profile.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../diyhacks-app/.next/build-manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/../diyhacks-app/.next/build-manifest.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../diyhacks-app/.next/server/pages-manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/../diyhacks-app/.next/server/pages-manifest.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../diyhacks-app/.next/static/runtime/webpack.js" beforeDir="false" afterPath="$PROJECT_DIR$/../diyhacks-app/.next/static/runtime/webpack.js" afterDir="false" />
@@ -48,9 +61,20 @@
       <change beforePath="$PROJECT_DIR$/../diyhacks-app/src/pages/Submission/Submission.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/../diyhacks-app/src/pages/screens/Submission/Submission.module.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../diyhacks-app/src/pages/Submission/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/../diyhacks-app/src/pages/screens/Submission/index.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../diyhacks-app/src/pages/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/../diyhacks-app/src/pages/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/imgs/logos/titan2022.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/imgs/logos/titan2022.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/imgs/profile.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/imgs/profile.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/imgs/socialers/github.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/imgs/socialers/github.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/imgs/socialers/linkedin.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/imgs/socialers/linkedin.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/imgs/socialers/mail.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/imgs/socialers/mail.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/imgs/socialers/tiktok.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/imgs/socialers/tiktok.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.svelte" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../sanozie.github.io/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../sanozie.github.io/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Experience.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Experience.svelte" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Experiences.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Experiences.svelte" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Project.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Project.svelte" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/ProjectEnv.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ProjectEnv.svelte" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/Profile.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Profile.svelte" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/Social.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Social.svelte" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -84,17 +108,17 @@
     <property name="ts.external.directory.path" value="$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/public/imgs" />
-      <recent name="$PROJECT_DIR$/src/pages" />
-      <recent name="$PROJECT_DIR$" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/../static-sites/SEVC/public" />
       <recent name="$PROJECT_DIR$/projects/CodeAuthority" />
       <recent name="$PROJECT_DIR$/public/imgs" />
       <recent name="$PROJECT_DIR$/public/imgs/logos" />
       <recent name="$PROJECT_DIR$/public/imgs/banners" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/public/imgs" />
+      <recent name="$PROJECT_DIR$/src/pages" />
+      <recent name="$PROJECT_DIR$" />
     </key>
   </component>
   <component name="RunManager" selected="JavaScript Debug.diyhacks-lp">
@@ -143,7 +167,8 @@
       <workItem from="1599944377827" duration="10331000" />
       <workItem from="1600138919034" duration="9829000" />
       <workItem from="1600198019135" duration="1451000" />
-      <workItem from="1600446345530" duration="82000" />
+      <workItem from="1600446345530" duration="640000" />
+      <workItem from="1600805146491" duration="4054000" />
     </task>
     <servers />
   </component>
